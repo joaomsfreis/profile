@@ -55,7 +55,7 @@ export default defineComponent({
 
 @media only screen and (max-width: 900px) {
   .education {
-    margin: 2rem;
+    margin: 0rem 1rem;
   }
 }
 </style>

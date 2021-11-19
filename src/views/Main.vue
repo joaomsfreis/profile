@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="article">
     <TranslationSelect class="select" />
     <div class="main">
       <router-view class="page" />
@@ -18,6 +18,10 @@ export default defineComponent({
 </script>
 
 <style soped>
+.article {
+  width: 100%;
+}
+
 .main {
   height: 100vh;
 
@@ -33,6 +37,10 @@ export default defineComponent({
 }
 
 @media only screen and (max-width: 900px) {
+  .main {
+    height: 70vh;
+  }
+
   .select {
     position: inherit;
     padding-top: 3rem;

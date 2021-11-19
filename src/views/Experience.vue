@@ -1,34 +1,18 @@
 <template>
-  <div class="update">
-    <img class="update-img" src="../assets/meditation.svg" alt="not found" />
-    <h1 class="hx update-text">{{ $t('text.developing') }}</h1>
-  </div>
+  <Developing/>
 </template>
 
 <script lang="ts">
+import Developing from "@/components/Developing.vue";
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  components: { Developing },
   name: "Experience",
 });
 </script>
 
 <style scoped>
-.update {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
 
-.update-img {
-  width: 100vh;
-}
-
-.update-text {
-  font-size: 3rem;
-  color: var(--blue-secondary);
-  font-style: italic;
-}
 </style>
 
