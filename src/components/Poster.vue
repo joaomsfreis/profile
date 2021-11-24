@@ -110,10 +110,8 @@ export default defineComponent({
 
 @media only screen and (max-width: 900px) {
   .content {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr;
-    grid-template-areas: "period" "details";
-    margin: 0;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 </style>
