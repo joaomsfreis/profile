@@ -47,7 +47,7 @@ export default defineComponent({
         const difYears = end.getFullYear() - start.getFullYear();
 
         if (end.getMonth() < start.getMonth()) {
-          years = difYears === 1 ? difYears - 1 : difYears;
+          years = difYears >= 1 ? difYears - 1 : difYears;
           months = end.getMonth() + (12 - start.getMonth());
         } else {
           years = difYears;
